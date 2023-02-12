@@ -12,10 +12,10 @@
     <body>
         <header>
             <h1 class="text-5xl font-semibold text-sky-400 text-center pt-12">Withdraw or Deposit Some Money</h1>
-            <div class="border-b-2 border-sky-400 border-dotted w-1/2 mx-auto mt-3"></div>
+            <div class="border-b-2 border-sky-400 border-dotted w-5/6 md:w-1/2 mx-auto mt-3"></div>
         </header>
         <main>
-            <section class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-24">
+            <section class="grid md:grid-cols-3 gap-4 w-9/12 mx-auto mt-24">
                 <div class="bg-green-400 p-8 rounded-lg">
                     <h4 class="text-2xl text-white font-medium">Deposit</h4>
                     <h2 class="text-4xl text-white font-medium">$<span id="deposit-total">00</span></h2>
@@ -31,12 +31,12 @@
             </section>\
 
             <!-- deposit and withdraw -->
-            <section class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-8">
+            <section class="grid md:grid-cols-2 gap-4 w-5/6 md:w-9/12 mx-auto mt-8">
                 <div class="bg-pink-700 p-8 rounded-lg">
                     <h4 class="text-2xl text-white font-medium">Deposit here</h4>
 
-                    <input id="deposit-field" class="block w-5/6 rounded py-2 my-4 pl-3 mb-3" type="text" name=""
-                        placeholder="$ Amount you want to deposit">
+                    <input id="deposit-field" class="block w-full md:w-5/6 rounded py-2 my-4 pl-3 mb-3" type="text"
+                        name="" placeholder="$ Amount you want to deposit">
 
                     <button id="btn-deposit"
                         class="bg-sky-500 py-3 px-5 rounded-lg hover:bg-cyan-700 text-white font-medium">Deposit</button>
@@ -44,12 +44,21 @@
 
                 <div class="bg-fuchsia-700 p-8 rounded-lg">
                     <h4 class="text-2xl text-white font-medium">Withdraw here</h4>
-                    <input id="withdraw-field" class="block w-5/6 rounded py-2 my-4 pl-3 mb-3" type="text" name=""
-                        placeholder="$ Amount you want to withdraw">
+
+                    <input id="withdraw-field" class="block w-full md:w-5/6 rounded py-2 my-4 pl-3 mb-3" type="text"
+                        name="" placeholder="$ Amount you want to withdraw">
+
                     <button id="btn-withdraw"
                         class="bg-sky-500 py-3 px-5 rounded-lg hover:bg-cyan-700 text-white font-medium">Withdraw</button>
                 </div>
             </section>
+
+            <section class=" text-center md:text-right my-8 md:mr-48">
+                <h2 class="text-xl font-medium text-red-700">Log out here
+                    <a id="log-out" href="index.html"><img class="inline w-7" src="./img/Frame.png" alt=""></a>
+                </h2>
+            </section>
+
             <script src="./js/secont.js"></script>
             <script src="./js/third.js"></script>
         </main>
