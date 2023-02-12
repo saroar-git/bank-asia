@@ -24,7 +24,7 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
     const previousBalanceTotalString = balanceTotalElement.innerText;
     const previousBalanceTotal = parseFloat(previousBalanceTotalString);
 
-    if (newWithdrawAmount > previousWithdrawAmount) {
+    if (newWithdrawAmount > previousBalanceTotal) {
         alert('You have less amount');
         return;
     }
